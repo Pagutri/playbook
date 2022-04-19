@@ -71,3 +71,10 @@ explorers.forEach(explorer =>  console.log(explorer.stack))
 const explorersStacks = explorers.map(function(explorer){ return explorer.stack})
 console.log("Stacks de los explorers:")
 console.log(explorersStacks)
+
+// Punto 4. Obtén la lista de explorers que tengan en su stack "js", usa FILTER (para validar un elemento en un lista se usa el método includes)
+const explorersWhoKnowJs = explorers.filter((explorer) =>
+  explorer.stack.includes('js')
+)
+console.log("Explorers que saben js:")
+explorersWhoKnowJs.forEach(explorer => console.log(explorer.name))
