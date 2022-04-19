@@ -11,7 +11,7 @@ const issue = {
       return [this.title, this.author]
     },
     getGeneralInfo: function(){
-      return `This issue ${this.title} was created by ${this.author}`
+      return `This issue ${this.title} is currently ${this.status}`
     }
    }
    
