@@ -83,3 +83,8 @@ explorersWhoKnowJs.forEach(explorer => console.log(explorer.name))
 const fromCdmx = explorers.find((explorer) => explorer.city === "CDMX")
 console.log("Primer explorer de la Cdmx:")
 console.log(fromCdmx.name)
+
+// Punto 6. Obtén la suma de todos los exercises_completed, usa REDUCE
+const sumExercises = explorers.reduce((acc, explorer) => acc + explorer.exercises_completed, 0)
+console.log("Total de ejercicios completados por los explorers:")
+console.log(sumExercises)
