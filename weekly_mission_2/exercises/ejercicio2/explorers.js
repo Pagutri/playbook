@@ -66,3 +66,8 @@ explorers.forEach(explorer =>  console.log(explorer.name))
 // Punto 2. Imprime el stack de cada explorer, usa FOR EACH
 console.log("Stacks de los explorers:")
 explorers.forEach(explorer =>  console.log(explorer.stack))
+
+// Punto 3. Crea una nueva lista con las listas de stacks de cada explorer, usa MAP
+const explorersStacks = explorers.map(function(explorer){ return explorer.stack})
+console.log("Stacks de los explorers:")
+console.log(explorersStacks)
