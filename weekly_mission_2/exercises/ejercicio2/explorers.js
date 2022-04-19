@@ -78,3 +78,8 @@ const explorersWhoKnowJs = explorers.filter((explorer) =>
 )
 console.log("Explorers que saben js:")
 explorersWhoKnowJs.forEach(explorer => console.log(explorer.name))
+
+// Punto 5. Busca el primer explorer que sea de la CDMX, usa FIND
+const fromCdmx = explorers.find((explorer) => explorer.city === "CDMX")
+console.log("Primer explorer de la Cdmx:")
+console.log(fromCdmx.name)
