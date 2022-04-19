@@ -88,3 +88,8 @@ console.log(fromCdmx.name)
 const sumExercises = explorers.reduce((acc, explorer) => acc + explorer.exercises_completed, 0)
 console.log("Total de ejercicios completados por los explorers:")
 console.log(sumExercises)
+
+// Punto 7. Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME
+const haveSomeFinished = explorers.some((explorer) =>  explorer.missions.frontend.isFinished === true)
+console.log("A menos un explorer completó los ejercicios de frontend:")
+console.log(haveSomeFinished)
